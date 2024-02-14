@@ -8,3 +8,11 @@
 
 (0.d) gitignore: modify the file by adding more rules.
 
+
+(1) Create package /src/test/java/com.example.test and test class ChromeTest in this package.
+
+(1.a)
+(1.b)
+(1.c)
+(1.d)
+(1.e)
