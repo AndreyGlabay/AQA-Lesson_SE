@@ -25,5 +25,7 @@
 (2.b) ChromeTest @Test testFirefox(): implements new instance for website visiting with the driver.
 (2.c) ChromeTest @Test testFirefox(): get Title from the website.
 (2.d) ChromeTest @Test testFirefox(): Assert the Title.
-(2.e)
-(2.f)
+
+(3) Create a separate test class and move testFireFox() to it.
+
+
