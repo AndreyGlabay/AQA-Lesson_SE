@@ -29,5 +29,38 @@
     - (a) Test classes ChromeTest & FireFoxTest: move driver opening to @BeforeTest
     - (b) Test classes ChromeTest & FireFoxTest: move driver closing to @AfterTest
 
+(5) Set up Selenium Server (Grid)
+    - (a) https://www.selenium.dev/downloads/ -> Selenium Server (Grid) -> download Latest stable version (4.17.0);
+    - (b) In the dir with downloading file open terminal (Win) R.click -> Open in terminal -> PowerShell ->
+          -> execute command -> java -jar ./selenium-server-4.17.0.jar standalone --port 6789 ->
+          -> Selenium Server (Grid) standalone going to run.
 
+
+(6)
+    - (a) Copy test class ChromeTest and rename it to RemoteChromeTest (ChromeTest -> Refactor -> CopyClass)
+    - (b)
+    - (c)
+    - (d)
+    - (e)
+
+(7)
+    - (a)
+    - (b)
+    - (c)
+    - (d)
+    - (e)
+
+(8)
+    - (a)
+    - (b)
+    - (c)
+    - (d)
+    - (e)
+
+(9)
+    - (a)
+    - (b)
+    - (c)
+    - (d)
+    - (e)
 
