@@ -2,6 +2,7 @@ package com.example.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ChromeTest {
@@ -11,6 +12,7 @@ public class ChromeTest {
         WebDriver driver = new ChromeDriver(); // (1.b) implements new driver with WebDriver.
         driver.get(baseUrl); // (1.d) implements website visiting with the driver.
         var title = driver.getTitle(); // (1.e) implements var for put website title to it.
+        Assert.assertEquals(title, "DEMOQA"); // (1.f) Assert the website title.
 
 
     }

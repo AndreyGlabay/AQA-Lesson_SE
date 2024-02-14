@@ -16,7 +16,7 @@
 (1.c) ChromeTest: Implements new var with URL for website visiting.
 (1.d) ChromeTest @Test testChrome(): implements website visiting with the driver.
 (1.e) ChromeTest @Test testChrome(): implements var for put website title to it.
-(1.f)
+(1.f) ChromeTest @Test testChrome(): assert the website title.
 (1.g)
 (1.h)
 (1.i)
