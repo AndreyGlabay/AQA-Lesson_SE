@@ -12,12 +12,18 @@
 (1) Create package /src/test/java/com.example.test and test class ChromeTest in this package.
 
 (1.a) Test Class ChromeTest: implement annotation @Test with test method testChrome().
-(1.b) ChromeTest @Test testChrome(): implements new driver with WebDriver.
+(1.b) ChromeTest @Test testChrome(): implements new driver with WebDriver for Chrome.
 (1.c) ChromeTest: Implements new var with URL for website visiting.
 (1.d) ChromeTest @Test testChrome(): implements new instance for website visiting with the driver.
 (1.e) ChromeTest @Test testChrome(): get Title from the website.
 (1.f) ChromeTest @Test testChrome(): assert the Title.
-(1.g)
-(1.h)
-(1.i)
-(1.j)
+
+
+(2) Copy annotation @Test and change the driver from Chrome to FireFox.
+
+(2.a) ChromeTest @Test testFirefox(): implements new driver with WebDriver for FireFox.
+(2.b) ChromeTest @Test testFirefox(): implements new instance for website visiting with the driver.
+(2.c) ChromeTest @Test testFirefox(): get Title from the website.
+(2.d) ChromeTest @Test testFirefox(): Assert the Title.
+(2.e)
+(2.f)
