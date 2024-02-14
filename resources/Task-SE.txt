@@ -36,12 +36,13 @@
           -> Selenium Server (Grid) standalone going to run.
 
 
-(6)
+(6) Implements test class for test run on the remote computer (in this task still local - localhost)
     - (a) Copy test class ChromeTest and rename it to RemoteChromeTest (ChromeTest -> Refactor -> CopyClass)
     - (b) Test class RemoteChromeTest: Initiate gridUrl var with HTTP + localhost + port num;
     - (c) RemoteChromeTest: Initiate options var with ChromeOptions();
     - (d) RemoteChromeTest @BeforeTest: Modify driver opening with RemoteWebDriver();
-    - (e)
+
+ * NOTE: In this task, we use local PC for demo - localhost; IRL we're gonna to use predefined PC with Grid on it;
 
 (7)
     - (a)

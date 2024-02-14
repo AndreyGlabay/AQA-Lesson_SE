@@ -14,6 +14,8 @@ import java.net.URL;
 
 public class RemoteChromeTest { // (6.a) Copy test class ChromeTest and rename it to RemoteChromeTest
     String baseUrl = "https://demoqa.com/";
+
+    // *** In this task, we use local PC for demo - localhost; IRL we're gonna to use predefined PC with Grid on it;
     String gridUrl = "http://localhost:6789"; // (6.b) Initiate gridUrl var with HTTP + localhost + port num;
     WebDriver driver;
     ChromeOptions options = new ChromeOptions(); // (6.c) Initiate options var with ChromeOptions();
