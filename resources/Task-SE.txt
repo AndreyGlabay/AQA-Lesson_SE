@@ -12,7 +12,7 @@
 (1) Create package /src/test/java/com.example.test and test class ChromeTest in this package.
 
 (1.a) Test Class ChromeTest: implement annotation @Test with test method testChrome()
-(1.b)
+(1.b) ChromeTest @Test testChrome(): implements new driver with WebDriver
 (1.c)
 (1.d)
 (1.e)
