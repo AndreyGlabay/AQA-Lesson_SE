@@ -3,10 +3,14 @@ package com.example.test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class RemoteChromeTest { // (6.a) Copy test class ChromeTest and rename it to RemoteChromeTest
     String baseUrl = "https://demoqa.com/";
@@ -15,7 +19,8 @@ public class RemoteChromeTest { // (6.a) Copy test class ChromeTest and rename i
     ChromeOptions options = new ChromeOptions(); // (6.c) Initiate options var with ChromeOptions();
 
     @BeforeTest
-    public void driverOpening(){
+    public void driverOpening() throws MalformedURLException {
+        driver = new RemoteWebDriver(new URL(gridUrl), options); // (6.d) Modify driver opening with RemoteWebDriver();
 
     }
 

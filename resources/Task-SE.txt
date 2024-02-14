@@ -40,7 +40,7 @@
     - (a) Copy test class ChromeTest and rename it to RemoteChromeTest (ChromeTest -> Refactor -> CopyClass)
     - (b) Test class RemoteChromeTest: Initiate gridUrl var with HTTP + localhost + port num;
     - (c) RemoteChromeTest: Initiate options var with ChromeOptions();
-    - (d)
+    - (d) RemoteChromeTest @BeforeTest: Modify driver opening with RemoteWebDriver();
     - (e)
 
 (7)
