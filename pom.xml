@@ -14,4 +14,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency> <!-- (step 0.c) Add dependency for Selenium -->
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.17.0</version>
+        </dependency>
+        <dependency> <!-- (step 0.c) Add dependency for TEstNG -->
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.9.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>

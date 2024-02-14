@@ -1,0 +1,7 @@
+(0) Create new Java Maven Project.
+
+(0.a) Change the project structure from "src/main/java/com.example.school.test" to the
+      "src/main/java/com.example"
+(0.b) Add to the project structure dir "/resources" with Task's solution description file Task-SE.txt
+
+(0.c) pom.xml: add dependencies from Maven repo for Selenium and TestNG, and rebuild Project.
