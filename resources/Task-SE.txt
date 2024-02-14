@@ -1,31 +1,33 @@
 (0) Create new Java Maven Project.
-
-(0.a) Change the project structure from "src/main/java/com.example.school.test" to the
+    - (a) Change the project structure from "src/main/java/com.example.school.test" to the
       "src/main/java/com.example"
-(0.b) Add to the project structure dir "/resources" with Task's solution description file Task-SE.txt
-
-(0.c) pom.xml: add dependencies from Maven repo for Selenium and TestNG, and rebuild Project.
-
-(0.d) gitignore: modify the file by adding more rules.
+    - (b) Add to the project structure dir "/resources" with Task's solution description file Task-SE.txt
+    - (c) pom.xml: add dependencies from Maven repo for Selenium and TestNG, and rebuild Project.
+    - (d) gitignore: modify the file by adding more rules.
 
 
 (1) Create package /src/test/java/com.example.test and test class ChromeTest in this package.
-
-(1.a) Test Class ChromeTest: implement annotation @Test with test method testChrome().
-(1.b) ChromeTest @Test testChrome(): implements new driver with WebDriver for Chrome.
-(1.c) ChromeTest: Implements new var with URL for website visiting.
-(1.d) ChromeTest @Test testChrome(): implements new instance for website visiting with the driver.
-(1.e) ChromeTest @Test testChrome(): get Title from the website.
-(1.f) ChromeTest @Test testChrome(): assert the Title.
+    - (a) Test Class ChromeTest: implement annotation @Test with test method testChrome().
+    - (b) ChromeTest @Test testChrome(): implements new driver with WebDriver for Chrome.
+    - (c) ChromeTest: Implements new var with URL for website visiting.
+    - (d) ChromeTest @Test testChrome(): implements new instance for website visiting with the driver.
+    - (e) ChromeTest @Test testChrome(): get Title from the website.
+    - (f) ChromeTest @Test testChrome(): assert the Title.
 
 
 (2) Copy annotation @Test and change the driver from Chrome to FireFox.
+    - (a) ChromeTest @Test testFirefox(): implements new driver with WebDriver for FireFox.
+    - (b) ChromeTest @Test testFirefox(): implements new instance for website visiting with the driver.
+    - (c) ChromeTest @Test testFirefox(): get Title from the website.
+    - (d) ChromeTest @Test testFirefox(): assert the Title.
 
-(2.a) ChromeTest @Test testFirefox(): implements new driver with WebDriver for FireFox.
-(2.b) ChromeTest @Test testFirefox(): implements new instance for website visiting with the driver.
-(2.c) ChromeTest @Test testFirefox(): get Title from the website.
-(2.d) ChromeTest @Test testFirefox(): Assert the Title.
 
 (3) Create a separate test class and move testFireFox() to it.
+
+
+(4) Create var for driver and move driver opening & closing to @Before & @After to stop instances from multiplying:
+    - (a) Test classes ChromeTest & FireFoxTest: move driver opening to @BeforeTest
+    - (b) Test classes ChromeTest & FireFoxTest: move driver closing to @AfterTest
+
 
 
