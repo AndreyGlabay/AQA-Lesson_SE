@@ -10,7 +10,7 @@ public class ChromeTest {
     public void testChrome() { // (1.a) implement annotation @Test with test method testChrome().
         WebDriver driver = new ChromeDriver(); // (1.b) implements new driver with WebDriver.
         driver.get(baseUrl); // (1.d) implements website visiting with the driver.
-        // var title = driver.getTitle();
+        var title = driver.getTitle(); // (1.e) implements var for put website title to it.
 
 
     }
