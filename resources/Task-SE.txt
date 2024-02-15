@@ -45,23 +45,10 @@
  * NOTE: In this task, we use local PC for demo - localhost; IRL we're gonna to use predefined PC with Grid on it;
 
 (7)
-    - (a)
-    - (b)
-    - (c)
-    - (d)
-    - (e)
+    - (a) RemoteChromeTest @Test: using driver get URL + EP;
+    - (b) RemoteChromeTest @Test: et element with class name;
+    - (c) RemoteChromeTest @Test: Assert that in the class there is the text "Text Box";
 
-(8)
-    - (a)
-    - (b)
-    - (c)
-    - (d)
-    - (e)
-
-(9)
-    - (a)
-    - (b)
-    - (c)
-    - (d)
-    - (e)
+** NOTE: Before test run should be running standalone agent - from Terminal, using command
+         java -jar ./selenium-server-4.17.0.jar standalone --port 6789
 
