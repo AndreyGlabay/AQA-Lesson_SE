@@ -38,7 +38,7 @@ public class RemoteChromeTest { // (6.a) Copy test class ChromeTest and rename i
         var title = driver.getTitle();
         Assert.assertEquals(title, "DEMOQA");
         driver.get(baseUrl + "text-box"); // (7.a) Get Endpoint "https://demoqa.com/text-box";
-        var text = driver.findElement(By.className("col-12 mt-4 col-md-6")).getText();//(7.b)Get element with class name;
-        Assert.assertTrue(text.startsWith("Text Box")); // Assert that in the class there is the text "Text Box";
+        var text = driver.findElement(By.className("text-field-container")).getText();//(7.b)Get element with class name;
+        Assert.assertTrue(text.startsWith("Full Name")); // Assert that in the class there is the text "Text Box";
     }
 }
