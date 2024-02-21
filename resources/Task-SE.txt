@@ -54,4 +54,8 @@
 
 -------------------
 
-(8) Створив новий клас ChromeNewTest
+(8) Створив новий клас ChromeNewTest.
+
+(8.0) ChromeNewTest test class: задеклорував змінну driver, ініціював змінні для URL та EP;
+(8.1) @BeforeTest: Заімплементував відкриття Chrome інстансу;
+(8.2) @AfterTest: Заімплементував закриття Chrome інстансу;
