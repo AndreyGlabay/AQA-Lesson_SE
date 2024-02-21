@@ -54,8 +54,19 @@
 
 -------------------
 
-(8) Створив новий клас ChromeNewTest.
+(8) Create new class: ChromeNewTest.
 
-(8.0) ChromeNewTest test class: задеклорував змінну driver, ініціював змінні для URL та EP;
-(8.1) @BeforeTest: Заімплементував відкриття Chrome інстансу;
-(8.2) @AfterTest: Заімплементував закриття Chrome інстансу;
+(8.0) ChromeNewTest test class: declare var "driver", initiate vars for URL, Path and EP;
+(8.1) @BeforeTest: Implements Chrome instance opening;
+(8.2) @AfterTest: Implements Chrome instance closing;
+(8.3) @Test: ?????????????????????????????
+
+
+(9) Create new test method: testForm1()
+
+(9.1) testForm1(): create locators for inputs FirstName, LastName
+(9.2) ChromeNewTest test class: initiate vars Path and EP for web page with forms.
+(9.3) testForm1(): Get new instance of web page with forms.
+(9.4) testForm1(): Find an element using Locator
+(9.5) testForm1(): Insert value to this element;
+
