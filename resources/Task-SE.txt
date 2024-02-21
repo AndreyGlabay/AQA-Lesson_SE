@@ -52,3 +52,6 @@
 ** NOTE: Before test run should be running standalone agent - from Terminal, using command
          java -jar ./selenium-server-4.17.0.jar standalone --port 6789
 
+-------------------
+
+(8) Створив новий клас ChromeNewTest
