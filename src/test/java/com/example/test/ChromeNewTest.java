@@ -52,6 +52,14 @@ public class ChromeNewTest {                            // (step 8) Create new t
     public void testForm1() {  // (9) Implements test method for check Form
         final var FIRST_NAME_LOCATOR = "//*[@id=\"firstName\"]"; // (9.1) Implements Locator for the FirstName input;
         final var LAST_NAME_LOCATOR = "//*[@id=\"lastName\"]";   // (9.1) Implements Locator for the LastName input;
+        final String GENDER_LOCATOR = "//*[@id=\"genterWrapper\"]/div[2]/div[1]/label"; // (9.6) Add Locator;
+        final String MOBILE_LOCATOR = "//*[@id=\"userNumber\"]"; // (9.6) Add Locator;
+        final String DOB_LOCATOR = "//*[@id=\"dateOfBirthInput\"]"; // (9.6) Add Locator;
+        final String SUBJECTS_LOCATOR = "//*[@id=\"subjectsContainer\"]/div/div[1]"; // (9.6) Add Locator;
+        final String HOBBIES_LOCATOR = "//*[@id=\"subjectsContainer\"]/div/div[1]"; // (9.6) Add Locator;
+        final String SUBMIT_BUTTON_LOCATOR = "//*[@id=\"uploadPicture\"]"; // (9.6) Add Locator;
+
+
 
         driver.get(pageForms); // (9.3) Get new instance of web page with forms
         var firstName = driver.findElement(By.xpath(FIRST_NAME_LOCATOR)); // (9.4) Find an element using Locator;
