@@ -52,7 +52,7 @@
 ** NOTE: Before test run should be running standalone agent - from Terminal, using command
          java -jar ./selenium-server-4.17.0.jar standalone --port 6789
 
--------------------
+------------------------------------------------------------------------------------------------------------------------
 
 (8) Create new class: ChromeNewTest.
 
@@ -72,3 +72,8 @@
 (9.6) testForm1(): Create locators for inputs Gender, DoB, Subjects, Hobbies, Submit button.
 (9.7) testForm1(): Find the elements and insert values.
 
+------------------------------------------------------------------------------------------------------------------------
+
+(10) Create new branch 'pageobj'
+(10.a) Create new package 'pageobject': src/test/java/com.example/pageobject
+(10.b) In package src/test/java/com.example/test: Create new test class - SwagLabsTest.java
