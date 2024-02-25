@@ -4,12 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.List;
+
+import static org.testng.Assert.assertEquals;
 
 public class ChromeNewTest {                            // (step 8) Create new test class;
     WebDriver driver;                                   // (step 8.0) Declare var for WebDriver;
@@ -25,10 +28,10 @@ public class ChromeNewTest {                            // (step 8) Create new t
         driver = new ChromeDriver();                    // (step 8.1) Implements Chrome instance opening;
     }
 
-    @AfterTest
-    public void afterTest() {
-        driver.close();                                 // (step 8.2) Implements Chrome instance closing;
-    }
+//    @AfterTest
+//    public void afterTest() {
+//        driver.close();                                 // (step 8.2) Implements Chrome instance closing;
+//    }
 
     @Test
     public void findElementSet1() {
@@ -36,7 +39,7 @@ public class ChromeNewTest {                            // (step 8) Create new t
         WebElement element = driver.findElement(By.className("left-pannel"));
         List<WebElement> elements = driver.findElements(By.className("left-pannel"));
 
-        WebElement elem0 = driver.findElement(By.cssSelector("#left-pannel .element-group .group-header " +
+        WebElement elem0 = driver.findElement(By.cssSelector("#left-pannel .element-group .group-header" +
                 ".header-wrapper .header-text"));
         WebElement elem1 = driver.findElement(By.id("left-pannel"));
         WebElement elem2 = driver.findElement(By.name("left-pannel"));
@@ -52,18 +55,51 @@ public class ChromeNewTest {                            // (step 8) Create new t
     public void testForm1() {  // (9) Implements test method for check Form
         final var FIRST_NAME_LOCATOR = "//*[@id=\"firstName\"]"; // (9.1) Implements Locator for the FirstName input;
         final var LAST_NAME_LOCATOR = "//*[@id=\"lastName\"]";   // (9.1) Implements Locator for the LastName input;
+        final var EMAIL_LOCATOR = "//*[@id=\"userEmail\"]";
         final String GENDER_LOCATOR = "//*[@id=\"genterWrapper\"]/div[2]/div[1]/label"; // (9.6) Add Locator;
-        final String MOBILE_LOCATOR = "//*[@id=\"userNumber\"]"; // (9.6) Add Locator;
-        final String DOB_LOCATOR = "//*[@id=\"dateOfBirthInput\"]"; // (9.6) Add Locator;
-        final String SUBJECTS_LOCATOR = "//*[@id=\"subjectsContainer\"]/div/div[1]"; // (9.6) Add Locator;
-        final String HOBBIES_LOCATOR = "//*[@id=\"subjectsContainer\"]/div/div[1]"; // (9.6) Add Locator;
-        final String SUBMIT_BUTTON_LOCATOR = "//*[@id=\"uploadPicture\"]"; // (9.6) Add Locator;
-
-
+        final String MOBILE_LOCATOR = "//*[@id=\"userNumber\"]";
+        final String DOB_LOCATOR = "//*[@id=\"dateOfBirthInput\"]";
+        final String SUBJECTS_LOCATOR = "//*[@id=\"subjectsContainer\"]/div/div[1]/div[1]/div[1]";
+        final String HOBBIES_LOCATOR = "//*[@id=\"hobbiesWrapper\"]/div[2]/div[1]/label";
+        final String FORM_LOCATOR = "//*[@id=\"userForm\"]";
+        final String SUBMIT_BUTTON_LOCATOR = "//*[@id=\"submit\"]";
+        final String RESULT_LOCATOR = "/html/body/div[4]/div/div/div[2]";
 
         driver.get(pageForms); // (9.3) Get new instance of web page with forms
         var firstName = driver.findElement(By.xpath(FIRST_NAME_LOCATOR)); // (9.4) Find an element using Locator;
         firstName.sendKeys("John"); // (9.5) Insert value to this element;
+        var lastName = driver.findElement(By.xpath(LAST_NAME_LOCATOR)); // (9.7) Find the elements and insert values;
+        lastName.sendKeys("Doe");
+
+        var email = driver.findElement(By.xpath(EMAIL_LOCATOR));
+        email.sendKeys("john_doe@example.com");
+
+        var gender = driver.findElement(By.xpath(GENDER_LOCATOR));
+        gender.click();                                                         // click() - use for RADIO
+
+        var mobile = driver.findElement(By.xpath(MOBILE_LOCATOR));
+        mobile.sendKeys("0987654321");
+
+        var dob = driver.findElement(By.xpath(DOB_LOCATOR));
+        dob.clear();
+        dob.sendKeys("01 Jan 2001");
+
+//        var subjects = driver.findElement(By.xpath(SUBJECTS_LOCATOR));
+//        subjects.sendKeys("Maths");
+
+        var hobbies = driver.findElement(By.xpath(HOBBIES_LOCATOR));
+        hobbies.isSelected();                                                   // isSelected - use for CHECKBOX
+
+//        var submit = driver.findElement(By.xpath(SUBMIT_BUTTON_LOCATOR));
+//        submit.submit();
+
+        var form = driver.findElement(By.xpath(FORM_LOCATOR));
+        form.submit();
+
+        var check = driver.findElement(By.xpath(RESULT_LOCATOR));
+        Assert.assertEquals(check.getText(), "John Doe");               // ????????????????
+
+
         System.out.println("x");
 
     }

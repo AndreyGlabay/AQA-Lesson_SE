@@ -70,4 +70,5 @@
 (9.4) testForm1(): Find an element using Locator.
 (9.5) testForm1(): Insert value to this element.
 (9.6) testForm1(): Create locators for inputs Gender, DoB, Subjects, Hobbies, Submit button.
+(9.7) testForm1(): Find the elements and insert values.
 
