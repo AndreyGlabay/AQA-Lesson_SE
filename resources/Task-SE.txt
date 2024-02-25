@@ -84,3 +84,6 @@
 (11.3) Test class SwagLabsTest.java: implement var for base URL;
 (11.4) Test class SwagLabsTest.java: create annotations @Test and implement open web page GET URL using web driver;
 
+(12.0) @Test: Modify test method name to SuccessLoginStandardUser;
+(12.1) SuccessLoginStandardUser(): implements var login with valid login.
+(12.2) SuccessLoginStandardUser(): implements var password with valid password.

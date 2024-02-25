@@ -21,7 +21,9 @@ public class SwagLabsTest {
     }
 
     @Test
-    public void TestCase1() {
+    public void SuccessLoginStandardUser() {
+        var login = "standard_user"; // (12.1) Implements var login with valid login.
+        var password = "secret_sauce"; // (12.2) Implements var password with valid password.
         driver.get(baseUrl); // (11.4) Implement open web page GET URL using web driver;
     }
 }
