@@ -87,3 +87,6 @@
 (12.0) @Test: Modify test method name to SuccessLoginStandardUser;
 (12.1) SuccessLoginStandardUser(): implements var login with valid login.
 (12.2) SuccessLoginStandardUser(): implements var password with valid password.
+
+(13.0) Package src/test/java/com.example/pageobject: create new test class LoginPage.java
+
