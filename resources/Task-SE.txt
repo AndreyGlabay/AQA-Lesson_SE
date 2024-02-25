@@ -78,6 +78,9 @@
      - (a) Create new package 'pageobject': src/test/java/com.example/pageobject
      - (b) In package src/test/java/com.example/test: Create new test class - SwagLabsTest.java
 
+(11.0) Test class SwagLabsTest.java: implement var for web driver;
 (11.1) Test class SwagLabsTest.java: create annotations @BeforeTest and using test method arrange start of web browser.
 (11.2) Test class SwagLabsTest.java: create annotations @AfterTest and using test method arrange stop of web browser.
+(11.3) Test class SwagLabsTest.java: implement var for base URL;
+(11.4) Test class SwagLabsTest.java: create annotations @Test and implement open web page GET URL using web driver;
 
