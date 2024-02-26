@@ -130,4 +130,8 @@ Create test cases for the project "https://www.saucedemo.com/" with at least 3 s
 (21.2) ShouldSeeBrokenLinks(): Arrange login flow using LoginPage Object.
 (21.3) ShouldSeeBrokenLinks(): Arrange login using LoginPage object as problem user.
 (21.4) InventoryPage.java: Create locator for images.
+(21.5) InventoryPage.java: Create method getImageUrls().
+(21.6) InventoryPage.java - getImageUrls(): Create list of URLs.
+(21.7) InventoryPage.java - getImageUrls(): Define elements using the locator.
+(21.8) InventoryPage.java - getImageUrls(): Create the loop for get URLs for the images.
 

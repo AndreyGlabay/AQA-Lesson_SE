@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // (20) Copy and rename new test class: LoginPage.java -> InventoryPage.java
@@ -26,7 +27,12 @@ public class InventoryPage {
         return inventoryItems.size(); // (20.5) get inventory items qty.
     }
 
-    public List<String> getImageUrl() {
-
+    public List<String> getImageUrls() { // (21.5) Create the method.
+        List<String> urls = new ArrayList<>(); // (21.6) Create list of URLs.
+        List<WebElement> items = driver.findElements(By.xpath(INVENTORY_IMAGES_LOCATOR)); // (21.7) Define elements.
+        for (WebElement elem: items) { // (21.8) Create the loop for get URLs for the images.
+            urls.add(elem.getAttribute("src"));
+        }
+        return urls;
     }
 }
