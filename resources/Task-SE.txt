@@ -129,5 +129,5 @@ Create test cases for the project "https://www.saucedemo.com/" with at least 3 s
 (21.1) ShouldSeeBrokenLinks(): Implement open web page GET URL using web driver.
 (21.2) ShouldSeeBrokenLinks(): Arrange login flow using LoginPage Object.
 (21.3) ShouldSeeBrokenLinks(): Arrange login using LoginPage object as problem user.
-(21.4)
+(21.4) InventoryPage.java: Create locator for images.
 
