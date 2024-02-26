@@ -30,4 +30,15 @@ public class SwagLabsTest {
         loginPage.login("standard_user", "secret_sauce"); // (14.1) Arrange login using LoginPage obj.
         System.out.println(driver.getCurrentUrl());
     }
+
+    @Test
+    public void UnSuccessLoginLockedUser() { // (16.1) Create new test method UnSuccessLoginLockedUser()
+        var login = "standard_user";
+        var password = "secret_sauce";
+        driver.get(baseUrl);
+        var loginPage = new LoginPage(driver);
+        loginPage.login("locked_out_user", "secret_sauce"); // (16.2) check login for the locked user.
+        loginPage.checkMessage("this user has been locked out");   // (16.3) check the error message content.
+        System.out.println(driver.getCurrentUrl());
+    }
 }

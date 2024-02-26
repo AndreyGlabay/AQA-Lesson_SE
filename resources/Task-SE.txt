@@ -100,3 +100,6 @@
 
 (15.1) LoginPage.java: Create checkMessage() method for Error Message check in a wrong login flow case.
 
+(16.1) SwagLabsTest.java: Create new test method UnSuccessLoginLockedUser()
+(16.2) UnSuccessLoginLockedUser(): check login flow for the locked user.
+(16.3) UnSuccessLoginLockedUser(): check the error message content.
