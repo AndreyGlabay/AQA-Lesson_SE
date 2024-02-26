@@ -136,5 +136,5 @@ Create test cases for the project "https://www.saucedemo.com/" with at least 3 s
 (21.8) InventoryPage.java - getImageUrls(): Create the loop for get URLs for the images.
 (21.9) SwagLabsTest.java - ShouldSeeBrokenLinks(): Assert URL after success login.
 (21.10) SwagLabsTest.java - ShouldSeeBrokenLinks(): Create var for the InventoryPage.
-
+(21.11) SwagLabsTest.java - ShouldSeeBrokenLinks(): Get images URLs.
 

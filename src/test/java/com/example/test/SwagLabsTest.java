@@ -9,6 +9,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SwagLabsTest {
     private static WebDriver driver; // (11) Implement var for web driver;
     public static final String baseUrl = "https://www.saucedemo.com/v1/"; // (11.3) Implement var for base URL;
@@ -55,6 +57,6 @@ public class SwagLabsTest {
         loginPage.login("problem_user", "secret_sauce"); // (21.3) Arrange login using LoginPage obj.
         Assert.assertTrue(driver.getCurrentUrl().endsWith("inventory.html")); // (21.9) Assert URL after success login;
         var inventoryPage = new InventoryPage(driver); // (21.10) Create var for the InventoryPage;
-        A
+        List<String> images = inventoryPage.getImageUrls(); // (21.11) Get images URLs.
     }
 }
