@@ -3,6 +3,7 @@ package com.example.test;
 import com.example.pageobject.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -29,6 +30,7 @@ public class SwagLabsTest {
         var loginPage = new LoginPage(driver); // (14.1) Arrange login flow using LoginPage Object.
         loginPage.login("standard_user", "secret_sauce"); // (14.1) Arrange login using LoginPage obj.
         System.out.println(driver.getCurrentUrl());
+        Assert.assertTrue(driver.getCurrentUrl().endsWith("inventory.html")); // (17.1) Assert URL after success login;
     }
 
     @Test

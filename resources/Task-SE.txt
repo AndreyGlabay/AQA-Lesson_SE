@@ -103,3 +103,6 @@
 (16.1) SwagLabsTest.java: Create new test method UnSuccessLoginLockedUser()
 (16.2) UnSuccessLoginLockedUser(): check login flow for the locked user.
 (16.3) UnSuccessLoginLockedUser(): check the error message content.
+
+(17) Check that after success login the user is redirecting to the corresponding page.
+(17.1) SuccessLoginStandardUser(): assert page's URL after success login.
