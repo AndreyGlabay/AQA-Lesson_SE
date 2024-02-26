@@ -109,3 +109,5 @@
 
 (18) Check that after unsuccess login with the locked username - the error message contains corresponding text.
 (18.1) UnSuccessLoginLockedUser(): assert that in the error message the text is matches expected.
+
+(19) SwagLabsTest.java: @AfterTest: Add 5s delay after each test.

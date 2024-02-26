@@ -18,10 +18,12 @@ public class SwagLabsTest {
     }
 
     @AfterTest // (11.2) Arrange stop of web browser;
-    public void stopBrowser() {
+    public void stopBrowser() throws InterruptedException {
+        Thread.sleep(5000);
         driver.close();
     }
 
+    // CHECK SUCCESS LOGIN
     @Test
     public void SuccessLoginStandardUser() {
         var login = "standard_user"; // (12.1) Implements var login with valid login.
@@ -33,10 +35,9 @@ public class SwagLabsTest {
         Assert.assertTrue(driver.getCurrentUrl().endsWith("inventory.html")); // (17.1) Assert URL after success login;
     }
 
+    // CHECK THE ERROR MESSAGE (AFTER UNSUCCESS LOGIN OF THE LOCKED USER) CONTAINS CORRESPONDING TEXT
     @Test
     public void UnSuccessLoginLockedUser() { // (16.1) Create new test method UnSuccessLoginLockedUser()
-        var login = "standard_user";
-        var password = "secret_sauce";
         var errMsg = "this user has been locked out";
         driver.get(baseUrl);
         var loginPage = new LoginPage(driver);
