@@ -16,6 +16,10 @@ public class InventoryPage {
     private List<WebElement> inventoryItems; // (20.2) Implements the list of Inventory items.
     public InventoryPage(WebDriver driver) {
         this.driver = driver;
-        this.inventoryItems = driver.findElements(By.xpath(INVENTORY_ITEMS_LOCATOR)); // (20.3) Get items by locator.
+        inventoryItems = driver.findElements(By.xpath(INVENTORY_ITEMS_LOCATOR)); // (20.3) Get items by locator.
+    }
+
+    public int getNumberOfInventoryItems() { // (20.4) Create the method.
+        return inventoryItems.size(); // (20.5) get inventory items qty.
     }
 }

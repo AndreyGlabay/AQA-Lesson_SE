@@ -120,3 +120,5 @@ Create test cases for the project "https://www.saucedemo.com/" with at least 3 s
 (20.1) InventoryPage.java: Create locator for Inventory items.
 (20.2) InventoryPage.java: Implements the list of Inventory items.
 (20.3) InventoryPage(): Implements getting inventory items by locator.
+(20.4) InventoryPage.java: Create method getNumberOfInventoryItems().
+(20.5) getNumberOfInventoryItems(): get inventory items qty.
