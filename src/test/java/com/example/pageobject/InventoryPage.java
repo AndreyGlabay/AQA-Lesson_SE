@@ -12,7 +12,7 @@ import java.util.List;
 
 public class InventoryPage {
     private WebDriver driver;
-    private static final String INVENTORY_ITEMS_LOCATOR = "//*[@id='inventory_container']//div[@class='inventory_item]";
+    private static final String INVENTORY_ITEMS_LOCATOR = "//div[@id='inventory_container']//div[@class='inventory_item']";
     private List<WebElement> inventoryItems; // (20.2) Implements the list of Inventory items.
     public InventoryPage(WebDriver driver) {
         this.driver = driver;
