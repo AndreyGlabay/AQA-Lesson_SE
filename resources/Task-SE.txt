@@ -94,4 +94,5 @@
 (13.3) LoginPage.java: Create an object using method LoginPage(WebDriver driver).
 (13.4) LoginPage(WebDriver driver): Put elements to the obj using locators.
 (13.5) LoginPage.java: Create WebElements for UserName input, Password input, Login button, Error message.
+(13.6) LoginPage.java: Using login() method arrange login flow.
 

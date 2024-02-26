@@ -24,7 +24,7 @@ public class LoginPage {
     private WebElement button; // (13.5) Create WebElements for the Login button;
     private WebElement message; // (13.5) Create WebElements for the Error message;
 
-    public void login(String username, String password) {
+    public void login(String username, String password) { // (13.6) Using login() method arrange login flow.
         userNameField.sendKeys(username);
         passwordField.sendKeys(password);
         button.click();
