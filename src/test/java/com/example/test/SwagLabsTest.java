@@ -1,5 +1,6 @@
 package com.example.test;
 
+import com.example.pageobject.InventoryPage;
 import com.example.pageobject.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,6 +34,8 @@ public class SwagLabsTest {
         loginPage.login("standard_user", "secret_sauce"); // (14.1) Arrange login using LoginPage obj.
         System.out.println(driver.getCurrentUrl());
         Assert.assertTrue(driver.getCurrentUrl().endsWith("inventory.html")); // (17.1) Assert URL after success login;
+        var inventoryPage = new InventoryPage(driver); // (20.6) Create var for the InventoryPage;
+        Assert.assertEquals(inventoryPage.getNumberOfInventoryItems(), 6); //(20.7)Assert qty of inventory items;
     }
 
     // CHECK THE ERROR MESSAGE (AFTER UNSUCCESS LOGIN OF THE LOCKED USER) CONTAINS CORRESPONDING TEXT

@@ -122,3 +122,6 @@ Create test cases for the project "https://www.saucedemo.com/" with at least 3 s
 (20.3) InventoryPage(): Implements getting inventory items by locator.
 (20.4) InventoryPage.java: Create method getNumberOfInventoryItems().
 (20.5) getNumberOfInventoryItems(): get inventory items qty.
+(20.6) SwagLabsTest.java - @Test SuccessLoginStandardUser(): Create var for the InventoryPage.
+(20.7) SwagLabsTest.java - @Test SuccessLoginStandardUser(): Assert qty of the inventory items.
+
