@@ -91,6 +91,7 @@
 (13.0) Package src/test/java/com.example/pageobject: create new test class LoginPage.java
 (13.1) Test class LoginPage.java: implement var for web driver.
 (13.2) LoginPage.java: Create locators for input_login, input_password, button_login, error_message.
-(13.3) LoginPage.java: Create method LoginPage(WebDriver driver).
-(13.4) LoginPage(WebDriver driver): Find web elements using locators.
+(13.3) LoginPage.java: Create an object using method LoginPage(WebDriver driver).
+(13.4) LoginPage(WebDriver driver): Put elements to the obj using locators.
+(13.5) LoginPage.java: Create WebElements for UserName input, Password input, Login button, Error message.
 

@@ -11,16 +11,22 @@ public class LoginPage {
     private static final String BUTTON_LOCATOR = "//*[@id=\"login-button\"]"; // (13.2) Create locator for Login button;
     private static final String MESSAGE_LOCATOR = "//h3[@data-test=\"error\"]"; // (13.2) Add locator for the Error msg;
 
-    public LoginPage(WebDriver driver) { // (13.3) Create method LoginPage(WebDriver driver)
+    public LoginPage(WebDriver driver) { // (13.3) Create an object using method LoginPage(WebDriver driver)
         this.driver = driver;
-        userName = driver.findElement(By.xpath(USERNAME_LOCATOR)); // (13.4) Find web elements using locators.
-        password = driver.findElement(By.xpath(PASSWORD_LOCATOR));
+        userNameField = driver.findElement(By.xpath(USERNAME_LOCATOR)); // (13.4) Put elements to the obj using locators.
+        passwordField = driver.findElement(By.xpath(PASSWORD_LOCATOR));
         button = driver.findElement(By.xpath(BUTTON_LOCATOR));
         message = driver.findElement(By.xpath(MESSAGE_LOCATOR));
     }
 
-    private WebElement userName;
-    private WebElement password;
-    private WebElement button;
-    private WebElement message;
+    private WebElement userNameField; // (13.5) Create WebElements for the UserName input;
+    private WebElement passwordField; // (13.5) Create WebElements for the Password input;
+    private WebElement button; // (13.5) Create WebElements for the Login button;
+    private WebElement message; // (13.5) Create WebElements for the Error message;
+
+    public void login(String username, String password) {
+        userNameField.sendKeys(username);
+        passwordField.sendKeys(password);
+        button.click();
+    }
 }
