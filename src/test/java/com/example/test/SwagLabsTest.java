@@ -37,10 +37,11 @@ public class SwagLabsTest {
     public void UnSuccessLoginLockedUser() { // (16.1) Create new test method UnSuccessLoginLockedUser()
         var login = "standard_user";
         var password = "secret_sauce";
+        var errMsg = "this user has been locked out";
         driver.get(baseUrl);
         var loginPage = new LoginPage(driver);
         loginPage.login("locked_out_user", "secret_sauce"); // (16.2) check login for the locked user.
-        loginPage.checkMessage("this user has been locked out");   // (16.3) check the error message content.
-        System.out.println(driver.getCurrentUrl());
+        Assert.assertTrue(loginPage.checkMessage(errMsg), "Error message must contain: " + errMsg); // (18.1) ->
+        // -> assert that in the error message the text is matches expected.
     }
 }

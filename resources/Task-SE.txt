@@ -104,5 +104,8 @@
 (16.2) UnSuccessLoginLockedUser(): check login flow for the locked user.
 (16.3) UnSuccessLoginLockedUser(): check the error message content.
 
-(17) Check that after success login the user is redirecting to the corresponding page.
+(17) Check that after success login - the user is redirecting to the corresponding page.
 (17.1) SuccessLoginStandardUser(): assert page's URL after success login.
+
+(18) Check that after unsuccess login with the locked username - the error message contains corresponding text.
+(18.1) UnSuccessLoginLockedUser(): assert that in the error message the text is matches expected.
