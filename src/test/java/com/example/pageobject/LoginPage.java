@@ -13,20 +13,25 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) { // (13.3) Create an object using method LoginPage(WebDriver driver)
         this.driver = driver;
-        userNameField = driver.findElement(By.xpath(USERNAME_LOCATOR)); // (13.4) Put elements to the obj using locators.
-        passwordField = driver.findElement(By.xpath(PASSWORD_LOCATOR));
+        userNameInput = driver.findElement(By.xpath(USERNAME_LOCATOR)); // (13.4) Put elements to the obj using locators.
+        passwordInput = driver.findElement(By.xpath(PASSWORD_LOCATOR));
         button = driver.findElement(By.xpath(BUTTON_LOCATOR));
-        message = driver.findElement(By.xpath(MESSAGE_LOCATOR));
+//        message = driver.findElement(By.xpath(MESSAGE_LOCATOR));
     }
 
-    private WebElement userNameField; // (13.5) Create WebElements for the UserName input;
-    private WebElement passwordField; // (13.5) Create WebElements for the Password input;
+    private WebElement userNameInput; // (13.5) Create WebElements for the UserName input;
+    private WebElement passwordInput; // (13.5) Create WebElements for the Password input;
     private WebElement button; // (13.5) Create WebElements for the Login button;
     private WebElement message; // (13.5) Create WebElements for the Error message;
 
     public void login(String username, String password) { // (13.6) Using login() method arrange login flow.
-        userNameField.sendKeys(username);
-        passwordField.sendKeys(password);
+        userNameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
         button.click();
+    }
+
+    public boolean checkMessage(String str) {
+        message = driver.findElement(By.xpath(MESSAGE_LOCATOR));
+        return (message.getText().contains(str));
     }
 }

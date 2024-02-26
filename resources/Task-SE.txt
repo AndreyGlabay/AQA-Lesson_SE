@@ -98,5 +98,5 @@
 
 (14.1) SwagLabsTest.java - SuccessLoginStandardUser(): arrange login flow using LoginPage Object.
 
-(15.1) LoginPage.java: Create checkMessage() method
+(15.1) LoginPage.java: Create checkMessage() method for Error Message check in a wrong login flow case.
 
