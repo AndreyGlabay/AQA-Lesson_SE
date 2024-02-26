@@ -73,6 +73,9 @@
 (9.7) testForm1(): Find the elements and insert values.
 
 ------------------------------------------------------------------------------------------------------------------------
+TASK
+Create test cases for the project "https://www.saucedemo.com/" with at least 3 scenarios and 1 PageObject.
+
 
 (10) Create new branch 'pageobj'
      - (a) Create new package 'pageobject': src/test/java/com.example/pageobject
@@ -111,3 +114,5 @@
 (18.1) UnSuccessLoginLockedUser(): assert that in the error message the text is matches expected.
 
 (19) SwagLabsTest.java: @AfterTest: Add 5s delay after each test.
+
+(20) Package src/test/java/com.example/pageobject: copy and rename new test class: LoginPage.java -> InventoryPage.java.
