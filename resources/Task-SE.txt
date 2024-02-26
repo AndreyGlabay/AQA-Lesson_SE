@@ -96,3 +96,7 @@
 (13.5) LoginPage.java: Create WebElements for UserName input, Password input, Login button, Error message.
 (13.6) LoginPage.java: Using login() method arrange login flow.
 
+(14.1) SwagLabsTest.java - SuccessLoginStandardUser(): arrange login flow using LoginPage Object.
+
+(15.1) LoginPage.java: Create checkMessage() method
+

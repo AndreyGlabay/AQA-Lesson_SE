@@ -1,5 +1,6 @@
 package com.example.test;
 
+import com.example.pageobject.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -25,5 +26,8 @@ public class SwagLabsTest {
         var login = "standard_user"; // (12.1) Implements var login with valid login.
         var password = "secret_sauce"; // (12.2) Implements var password with valid password.
         driver.get(baseUrl); // (11.4) Implement open web page GET URL using web driver;
+        var loginPage = new LoginPage(driver); // (14.1) Arrange login flow using LoginPage Object.
+        loginPage.login("standard_user", "secret_sauce"); // (14.1) Arrange login using LoginPage obj.
+        System.out.println(driver.getCurrentUrl());
     }
 }
