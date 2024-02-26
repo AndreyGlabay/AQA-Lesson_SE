@@ -48,4 +48,15 @@ public class SwagLabsTest {
         Assert.assertTrue(loginPage.checkMessage(errMsg), "Error message must contain: " + errMsg); // (18.1) ->
         // -> assert that in the error message the text is matches expected.
     }
+
+    @Test
+    public void ShouldSeeBrokenLinks() {
+        driver.get(baseUrl); // (21.1) Implement open web page GET URL using web driver;
+        var loginPage = new LoginPage(driver); // (21.2) Arrange login flow using LoginPage Object.
+        loginPage.login("problem_user", "secret_sauce"); // (21.3) Arrange login using LoginPage obj.
+        System.out.println(driver.getCurrentUrl());
+        Assert.assertTrue(driver.getCurrentUrl().endsWith("inventory.html")); // (17.1) Assert URL after success login;
+        var inventoryPage = new InventoryPage(driver); // (20.6) Create var for the InventoryPage;
+        Assert.assertEquals(inventoryPage.getNumberOfInventoryItems(), 6); //(20.7)Assert qty of inventory items;
+    }
 }

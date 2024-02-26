@@ -125,3 +125,9 @@ Create test cases for the project "https://www.saucedemo.com/" with at least 3 s
 (20.6) SwagLabsTest.java - @Test SuccessLoginStandardUser(): Create var for the InventoryPage.
 (20.7) SwagLabsTest.java - @Test SuccessLoginStandardUser(): Assert qty of the inventory items.
 
+(21.0) SwagLabsTest.java: create @Test ShouldSeeBrokenLinks().
+(21.1) ShouldSeeBrokenLinks(): Implement open web page GET URL using web driver.
+(21.2) ShouldSeeBrokenLinks(): Arrange login flow using LoginPage Object.
+(21.3) ShouldSeeBrokenLinks(): Arrange login using LoginPage object as problem user.
+(21.4)
+
