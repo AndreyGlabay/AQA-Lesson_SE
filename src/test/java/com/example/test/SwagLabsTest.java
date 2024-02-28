@@ -50,6 +50,7 @@ public class SwagLabsTest {
         // -> assert that in the error message the text is matches expected.
     }
 
+    // CHECK THAT POSSIBLE TO SEE BROKEN LINKS
     @Test
     public void ShouldSeeBrokenLinks() {
         driver.get(baseUrl); // (21.1) Implement open web page GET URL using web driver;
